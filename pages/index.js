@@ -12,36 +12,32 @@ import { createClient } from "contentful";
 import Hero from "@components/Hero";
 import CustomizationOffer from "@components/CustomizationOffer";
 import OurStory from "@components/OurStory";
+import Categories from "@components/Categories";
 
 export default function Home({ posts }) {
 	// console.log("Post ", posts);
 
 	return (
-
-
-    <Layout color={false}> 
-	
+		<Layout color={false}>
 			<Head>
-				<title>Next.js Starter!</title>
+				<title>Fancyflower Cakes</title>
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
-      <Hero />
-	  <Offer />	<CustomizationOffer />
-
-	  <OurStory />
-
+			<Hero />
+			<Offer /> 
+			<div className="bg-yellow-50  py-0.5">
+			<Categories />
+			</div>
+			
+			<CustomizationOffer />
+			<OurStory />
 			{posts.map((item) => (
 				<div key={item.sys.id} className='bg-red-200'>
 					{item.fields.name}
 				</div>
 			))}
-
 			<div className='posts'> </div>
-
-	
-	
-
-    </Layout>
+		</Layout>
 	);
 }
 
