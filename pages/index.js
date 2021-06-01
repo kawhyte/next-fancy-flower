@@ -10,6 +10,7 @@ const accessToken = process.env.CONTENTFUL_ACCESS_TOKEN;
 
 import { createClient } from "contentful";
 import Hero from "@components/Hero";
+import CustomizationOffer from "@components/CustomizationOffer";
 
 export default function Home({ posts }) {
 	// console.log("Post ", posts);
@@ -24,7 +25,7 @@ export default function Home({ posts }) {
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
       <Hero />
-	  <Offer />
+	  <Offer />	<CustomizationOffer />
 
 			{posts.map((item) => (
 				<div key={item.sys.id} className='bg-red-200'>
@@ -34,7 +35,7 @@ export default function Home({ posts }) {
 
 			<div className='posts'> </div>
 
-			
+	
 	
 
     </Layout>

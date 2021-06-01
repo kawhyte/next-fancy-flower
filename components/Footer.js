@@ -4,7 +4,11 @@ export default function Footer() {
   return (
     <>
       <footer className={styles.footer}>
-        Made with <img src="/netliheart.svg" alt="Netlify Logo" className={styles.logo} /> for you
+      
+      <div> 
+      © 2021 Fancy Flower Cakes. All rights reserved.
+      </div>  
+      <p> </p>
       </footer>
     </>
   )
