@@ -12,13 +12,13 @@ const section = [
 	{
 		name: "Cupcakes",
 		description:"With buttercream frosting with or without custom cake toppers",
-		icon: "/icons/muffin.png",
+		icon: "/icons/cupcake.svg",
 		text: "Muffin icon",
 	},
 	{
 		name: "Special occasion cakes",
 		description:"Covered with buttercream, ganache or fondant.",
-		icon: "/icons/cake.svg",
+		icon: "/icons/cakewithcherry.svg",
 		text: "Cake icon",
 	},
 
@@ -28,7 +28,7 @@ function OfferSection() {
 	return (
 		<div className='m-4 mt-10 mb-10  sm:p-10 flex flex-col'>
 			<div className='flex justify-center'>
-				<p className='p-2 mb-2 text-xl font-extrabold tracking-tight text-center text-black  leading-8 sm:text-4xl sm:leading-10'>
+				<p className='p-2 mb-8 text-xl font-extrabold tracking-tight text-center text-black  leading-8 sm:text-4xl sm:leading-10'>
 					What We Offer
 					<div className='flex justify-start w-40 py-0 mx-auto my-0 border-b-4 rounded-t opacity-50 border-yellow-500 gradient  sm:w-72'></div>
 				</p>
@@ -45,8 +45,8 @@ function OfferSection() {
 											className=''
 											src={item.icon}
 											alt={item.text}
-											width={20}
-											height={20}
+											width={65}
+											height={65}
 										/>
 									</div>
 								</div>

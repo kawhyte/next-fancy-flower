@@ -9,29 +9,22 @@ const navigation = [
 	{
 		name: "Birthday",
 		href: "/hotel",
-		icon: "/icon/hotel.svg",
+		icon: "/icons/nav-birthday.svg",
 		text: "Hotel icon",
 		current: false,
 	},
 	{
 		name: "Anniversary/Wedding",
 		href: "/food",
-		icon: "/icon/food.svg",
+		icon: "/icons/nav-cake.svg",
 		text: "Plane icon",
 		current: false,
 	},
 	{
 		name: "Graduation",
 		href: "/day-trip",
-		icon: "/icon/walk.svg",
+		icon: "/icons/nav-graduation.svg",
 		text: "Walking icon",
-		current: false,
-	},
-	{
-		name: "Our Story",
-		href: "/airport",
-		icon: "/icon/plane.svg",
-		text: "Plane icon",
 		current: false,
 	},
 ];
@@ -66,10 +59,8 @@ export default function Nav({ color }) {
 									<div className='flex-shrink-0 flex items-center'>
 										<svg
 											xmlns='http://www.w3.org/2000/svg'
-                                            className='h-11 w-11 md:h-8 md:w-8 md:mr-2 fill-current text-yellow-300'
+											className='h-11 w-11 md:h-8 md:w-8 md:mr-2 fill-current text-yellow-500'
 											fill='none'
-											
-
 											height='512pt'
 											viewBox='0 -21 512 512'
 											width='512pt'>
@@ -90,27 +81,24 @@ export default function Nav({ color }) {
 									<div className='flex flex-row align-middle justify-center items-center  space-x-4'>
 										{navigation.map((item) => (
 											<Link href={item.href} key={item.name}>
-												<div className='flex flex-row justify-center align-middle items-center'>
+												<div className='flex flex-row justify-center align-bottom items-center'>
 													<button
 														key={item.name}
 														href={item.href}
 														className={classNames(
 															item.current
 																? "bg-gray-900 text-white"
-																: "text-gray-300  hover:text-white",
-															"px-2 py-2 rounded-md text-base font-medium flex flex-row justify-center align-middle items-center"
+																: "text-gray-500  hover:text-white",
+															"px-2 py-2 rounded-md text-base font-medium flex flex-row justify-center align-middle items-center hover:bg-yellow-500 "
 														)}>
 														<Image
-															className=''
+															className='hidden '
 															src={item.icon}
 															alt={item.text}
-															width={20}
-															height={20}
+															width={25}
+															height={25}
 														/>
-
-														<span className='mx-1  hover:text-pink-500'>
-															{item.name}
-														</span>
+														<span className='mx-2  '>{item.name}</span>
 													</button>
 												</div>
 											</Link>
@@ -118,19 +106,13 @@ export default function Nav({ color }) {
 									</div>
 								</div>
 							</div>
-							{/* <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                <button className="bg-gray-800 p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
-                  <span className="sr-only">View notifications</span>
-                  <BellIcon className="h-6 w-6" aria-hidden="true" />
-                </button>
-                <button className="bg-gray-800 p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
-                  <span className="sr-only">View notifications</span>
-                  <BellIcon className="h-6 w-6" aria-hidden="true" />
-                </button>
 
-                 Profile dropdown 
-                
-              </div>*/}
+							<div className='absolute hidden inset-y-0 right-0 lg:flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0'>
+								<button className='bg-gray-500 p-2 rounded-full text-gray-200 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white'>
+							
+									<span className='mx-2  '>Our Story</span>
+								</button>
+							</div>
 						</div>
 					</div>
 
