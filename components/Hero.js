@@ -42,6 +42,7 @@ function Hero() {
 							</p>
 
 							<div class='flex items-center justify-center mx-auto my-12'>
+							<a href='https://forms.gle/pRAKJqZhX6RQNZUKA' target="_blank" rel="noopener noreferrer" >
 								<button
 									type='button'
 									class='py-2 px-4 uppercase flex justify-center items-center  bg-yellow-300 hover:bg-yellow-400 focus:ring-yellow-400 focus:ring-offset-red-200 text-black w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg '>
@@ -59,7 +60,7 @@ function Hero() {
 										/>
 									</svg>
 									Fill out Order Form
-								</button>
+								</button></a>
 							</div>
 						</div>
 					</div>
