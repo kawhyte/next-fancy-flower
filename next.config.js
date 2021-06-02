@@ -1,9 +1,6 @@
-module.exports={
-
-
-    images:{
-
-        domains:['images.ctfassets.net']
-    },
-    target: 'serverless'
-}
+module.exports = {
+	images: {
+		domains: ['images.ctfassets.net'],
+	},
+	target: "serverless",
+};
