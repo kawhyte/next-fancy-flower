@@ -7,6 +7,13 @@ import Image from "next/image";
 
 const navigation = [
 	{
+		name: "View All",
+		href: "/all",
+		icon: "/icons/nav-birthday.svg",
+		text: "Hotel icon",
+		current: false,
+	},
+	{
 		name: "Birthday",
 		href: "/birthday",
 		icon: "/icons/nav-birthday.svg",
@@ -22,6 +29,13 @@ const navigation = [
 	},
 	{
 		name: "Graduation",
+		href: "/day-trip",
+		icon: "/icons/nav-graduation.svg",
+		text: "Walking icon",
+		current: false,
+	},
+	{
+		name: "Baby Shower",
 		href: "/day-trip",
 		icon: "/icons/nav-graduation.svg",
 		text: "Walking icon",
@@ -91,13 +105,7 @@ export default function Nav({ color }) {
 																: "text-gray-500  hover:text-white",
 															"px-2 py-2 rounded-md text-base font-medium flex flex-row justify-center align-middle items-center hover:bg-yellow-500 "
 														)}>
-														<Image
-															className='hidden '
-															src={item.icon}
-															alt={item.text}
-															width={25}
-															height={25}
-														/>
+														
 														<span className='mx-2  '>{item.name}</span>
 													</button>
 												</div>

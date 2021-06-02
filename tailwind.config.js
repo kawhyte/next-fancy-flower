@@ -15,6 +15,10 @@ module.exports = {
         sans: [ 'Montserrat', ...defaultTheme.fontFamily.sans],
         'righteous': ['Righteous', ...defaultTheme.fontFamily.sans],
       },
+      padding:{
+        '1/3': '33.33333%',
+        '2/3': '66.66667%'
+      },
 
       colors: {
         'accent-1': '#FAFAFA',
@@ -43,5 +47,6 @@ module.exports = {
         medium: '0 8px 30px rgba(0, 0, 0, 0.12)',
       },
     },
-  }
+  },
+  plugins: [require('@tailwindcss/aspect-ratio'),]
 }

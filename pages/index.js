@@ -20,23 +20,21 @@ export default function Home({ posts }) {
 	return (
 		<Layout color={false}>
 			<Head>
-				<title>Fancyflower Cakes</title>
+				<title>Home | Fancyflower Cakes</title>
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
 			<Hero />
 			<Offer /> 
-			<div className="bg-yellow-50  py-0.5">
+			<div className="bg-yellow-50  py-0.5 ">
+		
 			<Categories />
 			</div>
 			
+			
 			<CustomizationOffer />
 			<OurStory />
-			{posts.map((item) => (
-				<div key={item.sys.id} className='bg-red-200'>
-					{item.fields.name}
-				</div>
-			))}
-			<div className='posts'> </div>
+		
+			
 		</Layout>
 	);
 }
