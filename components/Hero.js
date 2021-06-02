@@ -32,7 +32,7 @@ function Hero() {
 				<div className='flex relative z-20 items-center'>
 					<div className='container mx-auto px-6 flex flex-col justify-between items-center relative py-4'>
 						<div className='flex flex-col my-20'>
-							<h2 className='max-w-3xl text-5xl md:text-6xl font-bold mx-auto dark:text-white text-white text-center py-2'>
+							<h2 className='max-w-3xl text-5xl  md:text-6xl font-bold mx-auto dark:text-white text-white text-center py-2'>
 								Cakes for all your special occasions.
 							</h2>
 							<div className='flex justify-start w-40 py-0 mx-auto my-0 border-b-4 rounded-t opacity-50 border-yellow-300  mb-6 gradient sm:w-96 '></div>

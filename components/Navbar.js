@@ -84,7 +84,7 @@ export default function Nav({ color }) {
 
 										<p
 											className={
-												"hidden text-gray-900 font-righteous text-lg  leading-relaxed md:inline-block mr-4 py-2 whitespace-nowrap   " +
+												"hidden text-gray-900 font-Courgette text-xl  leading-relaxed md:inline-block mr-4 py-2 whitespace-nowrap   " +
 												col
 											}>
 											Fancyflower Cakes

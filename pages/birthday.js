@@ -18,7 +18,7 @@ const breakpointColumnsObj = {
 };
 
 function Birthday({ posts }) {
-	console.log(posts);
+	//console.log(posts);
 
 	return (
 		<Layout color={false}>

@@ -18,7 +18,7 @@ const breakpointColumnsObj = {
 };
 
 function AllCakes({ posts }) {
-	console.log(posts);
+	//console.log(posts);
 
 	return (
 		<Layout color={false}>

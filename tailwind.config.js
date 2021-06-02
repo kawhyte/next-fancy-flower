@@ -12,8 +12,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: [ 'Montserrat', ...defaultTheme.fontFamily.sans],
-        'righteous': ['Righteous', ...defaultTheme.fontFamily.sans],
+        sans: [ 'Noto Sans JP', ...defaultTheme.fontFamily.sans],
+        'Courgette': ['Courgette', ...defaultTheme.fontFamily.sans],
+        'Roboto': ['Roboto', ...defaultTheme.fontFamily.sans],
       },
       padding:{
         '1/3': '33.33333%',
