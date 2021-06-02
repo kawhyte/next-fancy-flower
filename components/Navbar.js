@@ -8,7 +8,7 @@ import Image from "next/image";
 const navigation = [
 	{
 		name: "Birthday",
-		href: "/hotel",
+		href: "/birthday",
 		icon: "/icons/nav-birthday.svg",
 		text: "Hotel icon",
 		current: false,
@@ -110,7 +110,7 @@ export default function Nav({ color }) {
 							<div className='absolute hidden inset-y-0 right-0 lg:flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0'>
 								<button className='bg-gray-500 p-2 rounded-full text-gray-200 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white'>
 							
-									<span className='mx-2  '>Our Story</span>
+									<span className='mx-2  '>Contact us</span>
 								</button>
 							</div>
 						</div>

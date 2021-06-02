@@ -5,8 +5,6 @@ import Layout from "../components/Layout";
 import Offer from "../components/OfferSection";
 const space = process.env.CONTENTFUL_SPACE_ID;
 const accessToken = process.env.CONTENTFUL_ACCESS_TOKEN;
-//import { fetchEntries } from './util/contenfulPosts'
-//import Post from 'components/Posts'
 
 import { createClient } from "contentful";
 import Hero from "@components/Hero";
@@ -14,8 +12,8 @@ import CustomizationOffer from "@components/CustomizationOffer";
 import OurStory from "@components/OurStory";
 import Categories from "@components/Categories";
 
-export default function Home({ posts }) {
-	// console.log("Post ", posts);
+function Birthday({ posts }) {
+	console.loh;
 
 	return (
 		<Layout color={false}>
@@ -23,23 +21,21 @@ export default function Home({ posts }) {
 				<title>Fancyflower Cakes</title>
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
-			<Hero />
-			<Offer /> 
-			<div className="bg-yellow-50  py-0.5">
-			<Categories />
-			</div>
-			
-			<CustomizationOffer />
-			<OurStory />
+
+			<Offer />
+
 			{posts.map((item) => (
 				<div key={item.sys.id} className='bg-red-200'>
 					{item.fields.name}
 				</div>
 			))}
-			<div className='posts'> </div>
+
+		
 		</Layout>
 	);
 }
+
+export default Birthday;
 
 export async function getStaticProps() {
 	const client = createClient({
@@ -48,17 +44,13 @@ export async function getStaticProps() {
 	});
 
 	const res = await client.getEntries({ content_type: "portfolio" });
-
-	//const res = await fetchEntries()
-
-	//console.log("RES ", res);
-	// const posts = await res.map((p) => {
-	//   return p.fields
-	// })
+	let result = res.items.filter(function (item) {
+		return item.fields.category === "Birthday";
+	});
 
 	return {
 		props: {
-			posts: res.items,
+			posts: result,
 		},
 	};
 }

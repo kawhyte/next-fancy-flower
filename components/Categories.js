@@ -4,7 +4,7 @@ import Link from "next/link";
 const category = [
 	{
 		name: "Birthday",
-		href: "/hotel",
+		href: "/birthday",
 		icon: "https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2447&q=80",
 		text: "Hotel icon",
 		current: false,
