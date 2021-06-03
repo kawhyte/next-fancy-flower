@@ -2,8 +2,8 @@ import React from "react";
 
 function Hero() {
 	return (
-		<div>
-			<div className='bg-white relative overflow-hidden h-5/6 lg:flex justify-center items-center'>
+		<>
+			<div className='bg-white relative overflow-hidden h-5/6 mx-auto lg:flex justify-center items-center lg:container mt-1'>
 				<img
 					src='https://res.cloudinary.com/babyhulk/image/upload/v1622337990/fancy-flower/pexels-daria-shevtsova-1070850.webp'
 					className=' block absolute lg:hidden h-full w-full object-cover'
@@ -16,7 +16,7 @@ function Hero() {
 					muted
 					className='hidden lg:block w-full h-full absolute object-cover '>
 					<source
-						src='https://res.cloudinary.com/babyhulk/video/upload/v1622337926/Video/video.mp4'
+						src='https://res.cloudinary.com/babyhulk/video/upload/v1622688571/Video/fancyflowercakesvid.mp4'
 						type='video/mp4'
 					/>
 					Your browser does not support the video tag.
@@ -66,7 +66,7 @@ function Hero() {
 					</div>
 				</div>
 			</div>
-		</div>
+		</>
 	);
 }
 
