@@ -10,7 +10,7 @@ const breakpointColumnsObj = {
 
 
 
-function Pages({posts}) {
+function Pages({posts, heading}) {
     //console.log("Pages ", posts)
     return (
         <section class='text-gray-600 body-font'>
@@ -18,8 +18,8 @@ function Pages({posts}) {
             <div class='flex flex-col text-center w-full mb-20'>
                 <div className='flex justify-center'>
                     <p className='p-2 mb-8 text-xl font-extrabold tracking-tight text-center text-black  leading-8 sm:text-4xl sm:leading-10'>
-                        Birthday Cakes
-                        <div className='flex justify-start w-40 py-0 mx-auto my-0 border-b-4 rounded-t opacity-50 border-yellow-500 gradient  sm:w-72'></div>
+                        {heading}
+                        <div className='flex justify-start w-40 py-0 mx-auto my-0 border-b-4 rounded-t opacity-50 border-yellow-300 gradient  sm:w-72'></div>
                     </p>
                 </div>
             </div>
@@ -30,8 +30,8 @@ function Pages({posts}) {
                 {posts.map((item) => (
                    
                         <div key={item.sys.id} className='relative'>
-                            <span class='px-4 py-2 my-4 mx-4  text-base rounded-full text-black  bg-yellow-300  absolute z-10 '>
-                                Birthday - {item.fields.name}
+                            <span class='px-4 py-2 my-4 mx-4  text-base rounded-full text-black  bg-yellow-200  absolute z-10 '>
+                                {heading} - {item.fields.name}
                             </span>
 
                             <Image

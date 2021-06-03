@@ -4,14 +4,14 @@ import Pages from "@components/Pages";
 import { fetchEntries } from "utils/getContentfulPosts";
 
 function Birthday({ posts }) {
-
+	
 	return (
 		<Layout color={false}>
 			<Head>
-				<title>Birthday Cakes | Fancyflower</title>
+				<title>Anniversary/Wedding Cakes | Fancyflower</title>
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
-			<Pages posts={posts} heading={"Birthday"}/>
+			<Pages posts={posts} heading={"Anniversary/Wedding"} />
 		</Layout>
 	);
 }

@@ -33,7 +33,7 @@ function OfferSection() {
 			<div className='flex justify-center'>
 				<p className='p-2 mb-8 text-xl font-extrabold tracking-tight text-center text-black  leading-8 sm:text-4xl sm:leading-10'>
 					What We Offer
-					<div className='flex justify-start w-40 py-0 mx-auto my-0 border-b-4 rounded-t opacity-50 border-yellow-500 gradient  sm:w-72'></div>
+					<div className='flex justify-start w-40 py-0 mx-auto my-0 border-b-4 rounded-t opacity-50 border-yellow-400 gradient  sm:w-72'></div>
 				</p>
 			</div>
 

@@ -28,7 +28,7 @@ function CustomizationOffer() {
 			<div className='container px-5 py-24 mx-auto'>
 				<div className='flex flex-col'>
 					<div className='h-1 bg-gray-200 rounded overflow-hidden'>
-						<div className='w-24 h-full bg-yellow-500'></div>
+						<div className='w-24 h-full bg-yellow-200'></div>
 					</div>
 					<div className='flex flex-wrap sm:flex-row flex-col py-6 mb-12'>
 						<h1 className='sm:w-2/5 text-gray-900 font-medium title-font text-2xl mb-2 sm:mb-0'>
@@ -51,7 +51,7 @@ function CustomizationOffer() {
 
 						{caketype.map((item) => (
 							<p key={item.id} className='flex items-center text-gray-600 mb-4'>
-								<span className='w-4 h-4 mr-2 inline-flex items-center justify-center bg-yellow-400 text-white rounded-full flex-shrink-0'>
+								<span className='w-4 h-4 mr-2 inline-flex items-center justify-center bg-yellow-200 text-black rounded-full flex-shrink-0'>
 									<svg
 										fill='none'
 										stroke='currentColor'
@@ -80,7 +80,7 @@ function CustomizationOffer() {
 						</h2>
 						{frostingtype.map((item) => (
 							<p key={item.id} className='flex items-center text-gray-600 mb-4'>
-								<span className='w-4 h-4 mr-2 inline-flex items-center justify-center bg-green-400 text-white rounded-full flex-shrink-0'>
+								<span className='w-4 h-4 mr-2 inline-flex items-center justify-center bg-black text-yellow-200 rounded-full flex-shrink-0'>
 									<svg
 										fill='none'
 										stroke='currentColor'

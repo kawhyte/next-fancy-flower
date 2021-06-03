@@ -35,7 +35,7 @@ function Hero() {
 							<h2 className='max-w-3xl text-5xl  md:text-6xl font-bold mx-auto dark:text-white text-white text-center py-2'>
 								Cakes for all your special occasions.
 							</h2>
-							<div className='flex justify-start w-40 py-0 mx-auto my-0 border-b-4 rounded-t opacity-50 border-yellow-300  mb-6 gradient sm:w-96 '></div>
+							<div className='flex justify-start w-40 py-0 mx-auto my-0 border-b-4 rounded-t opacity-50 border-yellow-200  mb-6 gradient sm:w-96 '></div>
 
 							<p className='text-lg text-center text-white'>
 								Available for pick-up. Contact us to discuss.

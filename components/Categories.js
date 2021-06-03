@@ -13,7 +13,7 @@ const category = [
 	{
 		id:2,
 		name: "Anniversary/Wedding",
-		href: "/food",
+		href: "/anniversary",
 		icon: "https://images.unsplash.com/photo-1564986021890-6f721f19c210?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80",
 		text: "Plane icon",
 		current: false,
