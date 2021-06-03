@@ -1,13 +1,10 @@
 import Head from "next/head";
-import Header from "components/Header";
 import Layout from "../components/Layout";
-
 import Pages from "@components/Pages";
 import { fetchEntries } from "utils/getContentfulPosts";
 
 function Birthday({ posts }) {
-	//console.log(posts);
-
+	
 	return (
 		<Layout color={false}>
 			<Head>
