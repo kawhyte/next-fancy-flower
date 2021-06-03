@@ -11,7 +11,7 @@ const breakpointColumnsObj = {
 
 
 function Pages({posts, heading}) {
-    //console.log("Pages ", posts)
+   console.log("Pages ", posts)
     return (
         <section class='text-gray-600 body-font'>
         <div class='container px-5 py-24 mx-auto'>
@@ -31,20 +31,21 @@ function Pages({posts, heading}) {
                    
                         <div key={item.sys.id} className='relative'>
                             <span class='px-4 py-2 my-4 mx-4  text-base rounded-full text-black  bg-yellow-200  absolute z-10 '>
-                                {heading} - {item.fields.name}
+                                {item.fields.name}
                             </span>
 
                             <Image
                                 class=' object-cover shadow-lg rounded-3xl absolute'
-                                src={"https:" + item.fields.thumbnail.fields.file.url}
+                                src={"https:" + item.fields.thumbnail.fields?.file?.url}
                                 width={
-                                    item.fields.thumbnail.fields.file.details.image.width
+                                    item.fields.thumbnail?.fields?.file.details.image.width
                                 }
                                 height={
-                                    item.fields.thumbnail.fields.file.details.image.height
+                                    item.fields.thumbnail.fields?.file.details.image.height
                                 }
                             />
                         </div>
+                    
                     
                 ))}
             </Masonry>

@@ -3,26 +3,26 @@ import Layout from "../components/Layout";
 import Pages from "@components/Pages";
 import { fetchEntries } from "utils/getContentfulPosts";
 
-function Anniversary({ posts }) {
+function Graduation({ posts }) {
 	
 	return (
 		<Layout color={false}>
 			<Head>
-				<title>Anniversary/Wedding Cakes | Fancyflower</title>
+				<title>Graduation Cakes | Fancyflower</title>
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
-			<Pages posts={posts} heading={"Anniversary/Wedding"} />
+			<Pages posts={posts} heading={"Graduation"} />
 		</Layout>
 	);
 }
 
-export default Anniversary;
+export default Graduation;
 
 export async function getStaticProps() {
 	const res = await fetchEntries();
 
 	let result = res.filter(function (item) {
-		return item.fields.category === "Wedding";
+		return item.fields.category === "Graduation";
 	});
 
 	return {

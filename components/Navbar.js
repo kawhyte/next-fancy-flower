@@ -29,14 +29,14 @@ const navigation = [
 	},
 	{
 		name: "Graduation",
-		href: "/day-trip",
+		href: "/graduation",
 		icon: "/icons/nav-graduation.svg",
 		text: "Walking icon",
 		current: false,
 	},
 	{
-		name: "Baby Shower",
-		href: "/day-trip",
+		name: "Baby",
+		href: "/baby",
 		icon: "/icons/nav-graduation.svg",
 		text: "Walking icon",
 		current: false,
@@ -103,7 +103,7 @@ export default function Nav({ color }) {
 														className={classNames(
 															item.current
 																? "bg-gray-900 text-white"
-																: "text-gray-600  hover:text-white",
+																: "text-gray-600  hover:text-black",
 															"px-2 py-2 rounded-md text-base font-medium flex flex-row justify-center align-middle items-center hover:bg-yellow-300 "
 														)}>
 														
