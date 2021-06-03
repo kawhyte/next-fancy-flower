@@ -3,7 +3,7 @@ import React from "react";
 function Hero() {
 	return (
 		<>
-			<div className='bg-white relative overflow-hidden h-5/6 mx-auto lg:flex justify-center items-center lg:container mt-1'>
+			<div className='bg-white relative overflow-hidden h-5/6  lg:flex justify-center items-center lg:mx-auto lg:container mt-1'>
 				<img
 					src='https://res.cloudinary.com/babyhulk/image/upload/v1622337990/fancy-flower/pexels-daria-shevtsova-1070850.webp'
 					className=' block absolute lg:hidden h-full w-full object-cover'
