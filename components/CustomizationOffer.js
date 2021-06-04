@@ -51,7 +51,7 @@ function CustomizationOffer() {
 
 						{caketype.map((item) => (
 							<p key={item.id} className='flex items-center text-gray-600 mb-4'>
-								<span className='w-4 h-4 mr-2 inline-flex items-center justify-center bg-yellow-200 text-black rounded-full flex-shrink-0'>
+								<span className='w-4 h-4 mr-2 inline-flex items-center justify-center bg-yellow-200 text-yellow-900 rounded-full flex-shrink-0'>
 									<svg
 										fill='none'
 										stroke='currentColor'
@@ -80,7 +80,7 @@ function CustomizationOffer() {
 						</h2>
 						{frostingtype.map((item) => (
 							<p key={item.id} className='flex items-center text-gray-600 mb-4'>
-								<span className='w-4 h-4 mr-2 inline-flex items-center justify-center bg-black text-yellow-200 rounded-full flex-shrink-0'>
+								<span className='w-4 h-4 mr-2 inline-flex items-center justify-center bg-black text-white rounded-full flex-shrink-0'>
 									<svg
 										fill='none'
 										stroke='currentColor'

@@ -38,7 +38,7 @@ function OfferSection() {
 			</div>
 
 			
-				<dl className='space-y-10 md:space-y-0 md:grid md:grid-cols-3 md:gap-x-8 md:gap-y-10 mx-auto'>
+				<div className='space-y-10 md:space-y-0 md:grid md:grid-cols-3 md:gap-x-8 md:gap-y-10 mx-auto'>
 					{section.map((item) => (
 						
 							<div key={item.id} className='flex flex-col items-center'>
@@ -54,37 +54,17 @@ function OfferSection() {
 									</div>
 								</div>
 								<div className=''>
-									<dt className='text-lg font-medium text-center text-gray-900 leading-6'>
+									<p className='text-lg font-medium text-center text-gray-900 leading-6'>
 										{item.name}
-									</dt>
-									<dd className='mt-2 text-base text-center text-gray-600'>
+									</p>
+									<p className='mt-2 text-base text-center text-gray-600'>
 										{item.description}
-									</dd>
+									</p>
 								</div>
 							</div>
 						
 					))}
-
-					{/*<div className='flex flex-col items-center'>
-						<div className='flex-shrink-0'>
-							<div className='flex items-center justify-center w-20 h-20 text-white rounded-md'>
-								<Img
-									fluid={data.cake.childImageSharp.fluid}
-									alt='cake'
-									className='container left-0 right-0 z-10 object-cover w-full h-full mb-10'
-								/>
-							</div>
-						</div>
-						<div className=''>
-							<dt className='text-lg font-medium text-center text-gray-900 leading-6'>
-								Delivery options
-							</dt>
-							<dd className='mt-2 text-base text-center text-gray-500'>
-								Made locally in Toronto. Only available for pick-up.
-							</dd>
-						</div>
-	</div>*/}
-				</dl>
+				</div>
 		
 		</div>
 	);
