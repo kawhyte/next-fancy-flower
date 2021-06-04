@@ -14,8 +14,8 @@ function Pages({posts, heading}) {
    console.log("Pages ", posts)
     return (
         <section class='text-gray-600 body-font'>
-        <div class='container px-5 py-24 mx-auto'>
-            <div class='flex flex-col text-center w-full mb-20'>
+        <div class='container py-12 px-5 lg:py-24 mx-auto'>
+            <div class='flex flex-col text-center w-full mb-10 lg:mb-20'>
                 <div className='flex justify-center'>
                     <p className='p-2 mb-8 text-xl font-extrabold tracking-tight text-center text-black  leading-8 sm:text-4xl sm:leading-10'>
                         {heading}
