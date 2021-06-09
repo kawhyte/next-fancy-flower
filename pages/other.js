@@ -8,10 +8,10 @@ function Graduation({ posts }) {
 	return (
 		<Layout color={false}>
 			<Head>
-				<title>Graduation Cakes | Fancyflower</title>
+				<title>Other Cakes/Pastries | Fancyflower</title>
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
-			<Pages posts={posts} heading={"Graduation"} />
+			<Pages posts={posts} heading={"Other Cakes/Pastries"} />
 		</Layout>
 	);
 }

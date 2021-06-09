@@ -27,16 +27,17 @@ const navigation = [
 		text: "Plane icon",
 		current: false,
 	},
+	
 	{
-		name: "Graduation",
-		href: "/graduation",
+		name: "Baby",
+		href: "/baby",
 		icon: "/icons/nav-graduation.svg",
 		text: "Walking icon",
 		current: false,
 	},
 	{
-		name: "Baby",
-		href: "/baby",
+		name: "Other",
+		href: "/other",
 		icon: "/icons/nav-graduation.svg",
 		text: "Walking icon",
 		current: false,
