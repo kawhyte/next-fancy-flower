@@ -20,7 +20,7 @@ const category = [
 	},
 	{
 		id:4,
-		name: "Baby",
+		name: "Babies/Kids",
 		href: "/baby",
 		icon: "https://images.unsplash.com/photo-1519340333755-56e9c1d04579?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2550&q=80",
 		text: "Walking icon",
