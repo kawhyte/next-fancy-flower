@@ -35,7 +35,7 @@ function Pages({posts, heading}) {
                             </span>
 
                             <Image
-                                class=' object-cover rounded-3xl absolute'
+                                classname=' object-cover rounded-3xl absolute'
                                 src={"https:" + item.fields.thumbnail.fields?.file?.url}
                                 width={
                                     item.fields.thumbnail?.fields?.file.details.image.width
@@ -43,6 +43,8 @@ function Pages({posts, heading}) {
                                 height={
                                     item.fields.thumbnail.fields?.file.details.image.height
                                 }
+                               
+                                alt='Cake'
                             />
                         </div>
                     
